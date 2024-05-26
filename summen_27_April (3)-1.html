@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title> practice </title>
+    <script>
+    // Write a function to calculate the sum of two numbers given as a parameters. 
+  function x(a,b)
+ {
+  let x=a+b
+   return x
+ }
+
+ let result= x(9,6);
+ console.log(result);
+
+  //Create an array of numbers and write a function to calculate the sum of all the numbers in the array.
+  array=[1,2,3,4,5,6];
+ function xyz(){
+ sum=0;
+ for(num of array){
+    sum+=num;
+ }
+ console.log(sum);
+ }
+ xyz();
+
+ // Implement a function that takes two arrays as input and returns true if they have equal lenghts, otherwise returns false.
+   var c =prompt("enter a value");
+   var d =prompt("enter second value");
+ function xyz(){
+    if(c.length==d.length){
+  console.log(true);
+    }
+    else{
+        console.log(false);
+    }
+}
+xyz();
+
+  
+ // Create a program that takes an array of integers and returns a new array with only the even numbers from the original array.
+ var i=[1,2,3,4,5,6,7,8];
+  console.log(i.filter(i=> i%2==0)) ;  
+  
+  
+ // write a function that takes an array of numbers and returns the average of all the numbers in the array.
+  n=[1,2,3,4,5,6,7,8];
+ function xyz(){
+  sum=n[0]+n[1]+n[2]+n[3]+n[4]+n[5]+n[6]+n[7];
+ console.log(sum);
+  average=sum/n.length;
+ console.log(average);
+ }
+ xyz();
+   
+
+ // Create a program that takes a year as input and prints whether it is a leap year or not.
+  var y=prompt("enter a year");
+  if(y%4==0){
+  console.log("leap year");
+   }
+  else{
+  console.log("not leap year");
+  }
+
+
+  // Create a function that takes an age as input and prints whether the person is child (0-12),teenager (13-19), adult(20-64), or senior(65 and above).
+   var age=prompt("enter an age");
+   function xyz(){
+   if (age>0 && age<=12){
+    console.log( " person is child")
+   }
+    else if(age>13 && age<=19){
+    console.log("person is teenager");
+   }
+   else if(age>20 && age<=64){
+    console.log("person is adult");
+   }
+    else if(age>=65){
+    console.log("person is senior");
+   }
+   }
+  xyz();
+
+  </script>
+</head>
+
+</html>

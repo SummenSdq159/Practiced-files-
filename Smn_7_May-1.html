@@ -1,0 +1,183 @@
+<html>
+<head>
+<title>
+    Test
+</title>
+<script>
+     // Write a javascript function that takes an array of numbers as input and returns the count of even numbers in the array.
+     var arr= JSON.parse(prompt('Enter an array'));
+    function abc() {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      count++;
+    }
+  }
+  return count;
+  }
+evenCount = abc();
+console.log(evenCount); 
+
+
+
+ // Create a program that prompts user to enter a series of numbers. After each number is entered, check if it is positive, negative or zero and store these counts in an array. Finally display the counts of positive, negative or zero numbers.
+var num =JSON.parse(prompt('Enter some numbers'));
+let counts = [0,0,0];
+if (num > 0) {
+    counts[0]++; // Increment positive count
+  } else if (num < 0) {
+    counts[1]++; // Increment negative count
+  } else {
+    counts[2]++; // Increment zero count
+  }
+ console.log(`Positive numbers: ${counts[0]}\r\nNegative numbers: ${counts[1]}\r\nZero numbers: ${counts[2]}`);
+
+
+
+  //  Implement a function in javascript that takes two arrays as input and returns a new array containing elements that are common to both arrays.
+var c= JSON.parse (prompt('enter first array'));
+var d= JSON.parse (prompt('enter second array'));
+let commonElements= c.filter( c=> d.includes(c))
+console.log(commonElements);
+
+
+ // Write a Javascript program that prompts user to enter grades. after each grade is entered calculate and display average grade. if the average grade is above 90, display "Excellent", if it is between 70 and 90, display "Good", otherwise,display "you are legend".
+
+let grades = [];
+let total = 0;
+let grade = prompt("Enter a grade");
+grades.push(grade);
+  total += grade;
+
+  let average = total / grades.length;
+  console.log(`Average grade: ${average}`);
+
+  if (average > 90) {
+    console.log("Excellent");
+  } else if (average >= 70) {
+    console.log("Good");
+  } else {
+    alert("You are legend");
+  }
+
+
+ // Create a program that generates an multiplication table from 1 to 10 using nested loops. Display the table in console.
+for (let i = 1; i <= 10; i++) {
+  for (let j = i; j <= 10; j++) {
+    console.log(`${i} * ${j} = ${i * j}`);
+  }
+}
+
+
+
+ /* What are some commonly used array methods for adding and removing elements at the begining and end of an array in Javascript? Explain with examples.
+
+
+  1.Adding elements:
+
+ push(): 
+ It is used to add one or more elements at the end of an array.*/
+
+const array = [1, 2, 3];
+array.push(4, 5); // [1, 2, 3, 4, 5]
+
+
+ /*unshift(): 
+ it is used to Add one or more elements at the start of an array.*/
+
+const t = [4,5,6];
+t.unshift(1,2,3); // [1,2,3,4,5,6]
+
+
+ /*2. Removing elements:
+
+ pop(): 
+It is used to Remove  last element of an array.*/
+
+const u = [1, 2, 3];
+u.pop(); // [1, 2]
+
+
+ /*shift():
+It is used to Remove first element of an array.*/
+
+const v = [1, 2, 3];
+v.shift(); // [2, 3]
+
+
+
+  /* How do you iterate over key-value pairs in an object in JavaScript? Provide an example.
+We can iterate over key-value pairs in an object by using for in loop.
+Example:*/
+
+obj={name: 'summen', age: '20', city: 'yazman'};
+for( key in obj){
+    console.log( key + ':' +  obj[key]);
+}
+
+ /* What is the purpose of reduce () method in JavaScript arrays? Provide an example program.
+Reduce method can reduce all elements ia an array into a single value that single value can be a number, string,object or anything. It uses two callback parameters, accumulatorand currentValue.
+Example:*/
+a=[1,2,3,4,5];
+sum= a.reduce((accumulator , currentValue)=>{
+    return accumulator + currentValue;
+}, 0);
+console.log(sum);
+
+
+ /* How do you check if an array contains a specific value in JavaScript, without using loop constructs? Provide an example of code.
+
+We can use includes() method to check a specific value in JavaScript.
+Example:*/
+a= [1,2,3,4,5];
+if (a.includes(4)){
+    console.log('Four is present in array.');
+}else{
+    console.log('Four is not present in array.');
+}
+
+
+ /* What is the difference between slice() and splice() methods in JavaScript arrays? Provide examples of each.
+
+Slice:
+Slice uses two parameters, start and end to print values on that index, values in range of that indexes.
+Example:*/
+
+a= ['Rafay' , 'Hammad' , 'Bilal' ,'Zohan', 'Tawab' , 'Kamran'];
+b= a.slice(1,4);
+console.log(b);
+
+/*Splice:
+Splice method is used to add new value on any index in any range. It uses three parameters, index: to which value has to be added, howmany: if you want to delete existing value, new value: value you want to add.
+Example:*/
+
+s= ['Hammad' , 'Bilal' ,'Zohan'];
+ s.splice(2,0,"Tawab", "MN");
+console.log(s);
+
+
+ /* How do you sort an array of objects based on a specific property in javascript. Provide an example.
+We can sort an array of objects based on a specific property in JavaScript using the sort() method and a compare function. 
+Example:*/
+arr = [ { name: 'John', age: 25 }, { name: 'Alice', age: 30 }, { name: 'Bob', age: 20 } ];
+arr.sort((a, b) => a.age - b.age);
+console.log(arr);
+
+
+ // Write a Javascript function that takes an array of strings as input and returns a new array containing only unique strings(no duplication).
+ var a = ['hello', 'world', 'hello', 'javascript', 'world'];
+function uv() {
+   uniqueStrings = [];
+  for (let i = 0; i < a.length; i++) {
+    if (!uniqueStrings.includes(a[i])) {
+      uniqueStrings.push(a[i]);
+    }
+  }
+  return uniqueStrings;
+}
+ uniqueStrings = uv();
+console.log(uniqueStrings);
+
+</script>
+</head>
+</html>

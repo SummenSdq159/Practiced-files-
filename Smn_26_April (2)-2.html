@@ -1,0 +1,74 @@
+<html>
+<head>
+<title> Practice </title>
+<script>
+  // Write a function that takes an array of numbers and returns the sum of all the numbers in the array.
+ var a= [1,4,5,8];
+ function xyz(){
+    sum=0;
+    for(num of a){
+     sum+=num;
+    }
+    console.log(sum);
+ }
+ xyz();
+
+
+
+  // Give an array of numbers, write a function that returns a new array with only the even numbers from the original array.
+var e= [1,2,3,4,5,6,8,9];
+function abc(){
+    for(i=0; i<e.length; i++){
+        if(e[i]%2==0){
+            console.log(e[i]);
+        }
+    }
+  }
+  abc();
+
+
+
+
+  // Create a function that takes no parameter and returns the current date in the format of "YYYY-MM-DD".
+var d= new Date();
+console.log( d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate() );
+
+
+
+  // Create a function that takes an array of strings and returns a new array with the lengths of each string.
+var f= ['MN', 'SMN',  'Areesha' , 'Neha'];
+function uv(){
+    for(i=0; i<f.length; i++){
+    e= f[i].length;
+    console.log(e);
+}
+}
+uv();
+
+
+
+ // Create a function that returns the current year.
+var y= new Date();
+console.log(y.getFullYear());
+
+
+ // Write a function that sorts an array of numbers in ascending order.
+    var n= [34,43,0,1,57,45,2];
+    function ab(){
+    console.log(n.sort());
+    }
+   ab();
+
+
+ // Create a function that takes an array of strings and returns the first element of the array.
+var s= ['SMN', 'MN',  'Areesha' , 'Neha'];
+console.log(s[0]);
+
+
+ // Write a function that takes no parameters and returns the current day of the month.
+var d= new Date();
+console.log(d.getDay ());
+
+</script>
+</head>
+</html>

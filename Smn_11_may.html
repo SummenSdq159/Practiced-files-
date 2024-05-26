@@ -1,0 +1,102 @@
+<html>
+<head>
+<title> practice </title>
+<script>
+ // Write a program to find the maximum of two numbers using if-else statements.
+var a= 100;
+var b= 20;
+if( a>b ){
+    console.log('maximum:'+ a );
+}
+else{
+    console.log('minimum:' + a);
+}
+
+
+ // Create a program to determine whether a given number is even or odd using if-else statement.
+var num= prompt ('enter a number');
+if(num%2==0){
+    console.log('even:' + num);
+}
+else{
+    console.log('odd:' + num);
+}
+
+
+ // Develop a program to find the largest among three numbers using if-else-if statements.
+var e= 5;
+var f=15;
+var g=3;
+if(e>f && e>g){
+    console.log('e is largest:' + e);
+}
+else if(f>e && f>g){
+    console.log('f is largest:' + f);
+}
+else if(g>e && g>f){
+    console.log('g is largest:' + g);
+}
+
+
+ // Design a program to classify a given number as positive, negative, or zero using if-else-if statements.
+var d= prompt('enter a number');
+if( d>0){
+    console.log('number is positive');
+}
+else if(d<0){
+    console.log('number is negative');
+}
+else{
+    console.log('number is zero');
+}
+
+
+ // Implement a program to check if a given year is a leap year or not using if-else statements.
+var y= prompt('enter a year');
+if(y%4==0){
+    console.log('year is leap:' + y);
+}
+else{
+    console.log('year is not leap:' + y);
+}
+
+
+ // Create a program to determine if a given character is a vowel or consonant using if-else statement.
+var chr=prompt ('enter a character');
+if( chr =='a' || chr =='A'|| chr =='e' || chr =='E'|| chr =='i' || chr =='I'|| chr =='o' || chr =='O'|| chr =='u' || chr =='U'){
+    console.log( 'character is vowel:' + chr  );
+}
+else{
+    console.log('character is consonant:'  + chr);
+}
+
+
+ // Write a program to calculate the absolute value of a number using if-else statements.
+var z= -5;
+if(z=Math.abs(z)){
+    console.log('Absolute value:' + z);
+}else{
+    console.log('Not absolute:' + z);
+}
+
+
+ // Develop a program to check if a given year is a century or not using if-else statements.
+var y= prompt('enter a year');
+if(y%100==0){
+    console.log('year is century:' + y);
+}else{
+    console.log('year is not century:' + y);
+}
+
+
+ // Create a program to determine if a given number is a prime number or not using if-else statements.
+var p= prompt('enter a number');
+if((p>1) && (p%2!=0) && (p%3!=0) && (p% Math.sqrt(p) !=0) || (p==2|| p==3)){
+    console.log('Number is prime:'  +  p);
+}else{
+    console.log('Number is not prime:'  + p);
+}
+
+</script>
+</head>
+</html>
